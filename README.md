@@ -1,5 +1,5 @@
 Modul 1 Praktikum PCD
-[Bahasa Visual Basic]
+[Visual Basic]
 - Import Gambar
 - Salin Gambar
 - Filter RGB & CMY
