@@ -9,8 +9,8 @@ Public Class Form1
 
     Private Sub buka_Click(sender As Object, e As EventArgs) Handles buka.Click 'jika tombol buka di klik maka akan menjalankan script
         Dim ofd As New OpenFileDialog 'mendeklarasikan OpenFileDialog baru menjadi variabel ofd
-        ofd.Title = "Choose Picture" 'mengatur judul openfiledialog menjadi "choose Picture"
-        ofd.Filter = "image files|*.bmp;*.jpg;*.jpeg;*.png" 'mengatur filter dari openfiledialog sehingga hanya bisa membuka file gambar
+        ofd.Title = "Pilih Gambar" 'mengatur judul openfiledialog menjadi "Pilih Gambar"
+        ofd.Filter = "image files|*.bmp;*.jpg" 'mengatur filter dari openfiledialog sehingga hanya bisa membuka file gambar
         ofd.RestoreDirectory = True 'mengatur jika kita membuka suatu file di salah satu direktori, maka saat openfiledialog dijalankan akan berada di direktori sebelumnya
         If ofd.ShowDialog() = DialogResult.OK Then 'membuat premis jika openfiledialog saat membuka file bernilai benar sesuai filter maka
             tampilan1.Image = New Bitmap(ofd.FileName) 'pada tampilan1 akan memuat sebuah gambar sesuai dengan file yang di pilih openfiledialog
